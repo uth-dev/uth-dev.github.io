@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy
 
 on:
   push:
@@ -10,8 +10,7 @@ on:
 
 jobs:
   deploy:
-    - name: Build and generate nuxt
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
