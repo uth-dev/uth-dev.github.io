@@ -1,4 +1,4 @@
-name: Build & Lint
+name: CI
 
 on:
   push:
@@ -39,4 +39,10 @@ jobs:
 
       - name: Run linter 👀
         run: npm run lint
+      
+      - name: build 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
 
