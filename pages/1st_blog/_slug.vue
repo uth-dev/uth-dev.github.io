@@ -1,18 +1,8 @@
 <template>
   <div class="">
-    <v-chip
-      v-if="chip1"
-      class="ma-2"
-      close
-      @click:close="chip1 = false">
-      Closable
-    </v-chip>
     <article>
       <nuxt-content :document="article" />
     </article>
-    <blog>
-      <nuxt-content :document="blog" />
-    </blog>
   </div>
 </template>
 <script>
