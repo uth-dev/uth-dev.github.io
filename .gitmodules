@@ -1,3 +1,5 @@
 [submodule "1st_blog"]
-	path = content
+	path = content/1st_blog
 	url = https://github.com/uth-dev/1st_blog
+	branch = master
+	update = rebase
